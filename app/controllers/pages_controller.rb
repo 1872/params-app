@@ -5,6 +5,11 @@ class PagesController < ApplicationController
     render 'query.html.erb'
   end
 
+  def url_segment
+    @message = params[:some_variable_thing]
+    render 'url_segment.html.erb'
+  end
+
   def guess
     @name = params[:query_name].upcase
     if @name[0] == "A"

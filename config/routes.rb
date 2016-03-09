@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   get '/query_example' => 'pages#query'
-  
+  get '/url_segment_example/:some_variable_thing' => 'pages#url_segment'
 
   get '/guessing_game' => 'pages#guess'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
