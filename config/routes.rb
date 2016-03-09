@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   get '/query_example' => 'pages#query'
   get '/url_segment_example/:some_variable_thing' => 'pages#url_segment'
+  get '/form_example' => 'pages#form'
+  post '/form_result' => 'pages#form_do_something'
 
   get '/guessing_game' => 'pages#guess'
 
