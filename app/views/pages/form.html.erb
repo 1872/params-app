@@ -10,8 +10,8 @@
 
 <%= form_tag "/form_result", method: :post do %>
   <div>
-    <%= label_tag :message %>
-    <%= text_field_tag :message %>
+    <%= label_tag :form_message, "Message: " %>
+    <%= text_field_tag :form_message %>
   </div>
   <div>
     <%= submit_tag "Submit message!" %>

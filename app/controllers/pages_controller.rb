@@ -15,7 +15,7 @@ class PagesController < ApplicationController
   end
 
   def form_do_something
-    @message = params[:message]
+    @message = params[:form_message]
     render 'form_do_something.html.erb'
   end
 
